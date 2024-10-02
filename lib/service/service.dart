@@ -8,7 +8,7 @@ class UploadApiImage {
       Uint8List bytes,
       String fileName
       ) async {
-    Uri url = Uri.parse("https://api.escuelajs.co/api/v1/files/fd18.jpg");
+    Uri url = Uri.parse("https://api.escuelajs.co/api/v1/files/upload");
     var request = http.MultipartRequest("POST", url);
     var myFile = http.MultipartFile(
       "file",
