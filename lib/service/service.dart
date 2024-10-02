@@ -4,10 +4,7 @@ import 'dart:typed_data';
 import 'package:http/http.dart' as http;
 
 class UploadApiImage {
-  Future<dynamic> uploadImage(
-      Uint8List bytes,
-      String fileName
-      ) async {
+  Future<dynamic> uploadImage(Uint8List bytes, String fileName) async {
     Uri url = Uri.parse("https://api.escuelajs.co/api/v1/files/upload");
     var request = http.MultipartRequest("POST", url);
     var myFile = http.MultipartFile(
